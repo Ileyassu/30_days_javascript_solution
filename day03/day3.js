@@ -38,3 +38,56 @@ console.log('' == false)
 console.log(0n != false)
 console.log(4 < '1')
 console.log(3 === '3')
+
+/*5 --Figure out the result of the following comparison expression 
+first without using console.log().
+After you decide the result confirm it using console.log()
+
+4 > 3 true
+4 >= 3 true
+4 < 3 false
+4 <= 3 false
+4 == 4 true
+4 === 4 true
+4 != 4false
+4 !== 4 false
+4 != '4' true
+4 == '4' true
+4 === '4' false
+Find the length of python and jargon and make a falsy comparison statement.
+*/
+
+console.log( ['python'].length == ['Jargon'].length);
+
+/*7 -- Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+
+4 > 3 && 10 < 12 true
+4 > 3 && 10 > 12 false
+4 > 3 || 10 < 12 true
+4 > 3 || 10 > 12 true
+!(4 > 3) false
+!(4 < 3) true
+!(false) true
+!(4 > 3 && 10 < 12) false
+!(4 > 3 && 10 > 12) true
+!(4 === '4') true
+There is no 'on' in both dragon and python
+*/
+let python = 'python';
+let jargon = 'python';
+console.log( python.includes('on') && jargon.includes('on'));
+
+//*7 -- Use the Date object to do the following activities
+
+const now = new Date();
+console.log(now.getFullYear());
+console.log(now.getMonth()+ 1)
+console.log(now)
+console.log(now.getDay())
+console.log(now.getHours())
+console.log(now.getMinutes())
+console.log(now.getTime())
+
+//Exercises: Level 2
+
+
