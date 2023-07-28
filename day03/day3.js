@@ -221,7 +221,7 @@ console.log(`I am ${myAge} + ${yourAge} older than you`)
 
 let newNow = new Date().getFullYear();
 let birthDate = parseInt(prompt('Enter your birth year', '2000'));
-console.log(typeof(birthDate))
+
 let isAllowedToDrive = newNow - birthDate;
 if(isAllowedToDrive > 18 ){
     console.log(`You are ${isAllowedToDrive}. You are old enough to drive`)
@@ -229,3 +229,38 @@ if(isAllowedToDrive > 18 ){
     console.log(`You are ${isAllowedToDrive}. You will be allowed to drive after 3 years.
     `);
 }
+
+//Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+let numOfYears = parseInt(prompt('Write number of years', '20'))
+let yearsInSeconds = numOfYears * 60 * 60 * 24 * 365;
+console.log(yearsInSeconds);
+
+//Create a human readable time format using the Date time object
+
+let timeOb = new Date();
+let month = timeOb.getMonth() + 1;
+let yearz = timeOb.getFullYear();
+let day = timeOb.getDay();
+let hourz = timeOb.getHours();
+let minutes = timeOb.getMinutes()
+
+console.log(`${yearz}/${month}/${day} ${hourz}:${minutes}`)
+console.log(`${day}/${month}/${yearz} ${hourz}:${minutes}`)
+
+if(yearz.toString().length){
+    yearz = '0' + yearz.toString()
+}
+if(month.toString().length){
+    month = '0' + month.toString()
+}
+if(day.toString().length){
+    day = '0' + day.toString()
+}
+if(hourz.toString().length){
+    hourz = '0' + hourz.toString()
+}
+if(minutes.toString().length){
+    minutes = '0' + minutes.toString()
+}
+console.log(`${day}/${month}/${yearz} ${hourz}:${minutes}`)
