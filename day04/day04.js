@@ -32,3 +32,15 @@ if(a > b ){
 a > b 
     ? console.log('a is greater than b') 
     : console.log('b is greater than a')
+
+//4
+//we check if a number is Even using modulus operator and 2
+//example : 
+
+let enterNum = parseInt(prompt('Enter a number'))
+console.log(enterNum)
+enterNum % 2 == 0
+    ? console.log('um is even')
+    : console.log('num is not even')
+
+//Exercises: Level 2
