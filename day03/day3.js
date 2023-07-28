@@ -1,6 +1,8 @@
 //Exercises: Level 1
 //---------------------------
 
+const { log } = require("console");
+
 
 /*1 --- Declare firstName, lastName, country, city, age, 
 isMarried, year variable and assign value to it and
@@ -192,3 +194,38 @@ let rph = parseInt(prompt('Enter rate per hours'))
 let wE = (h * rph) * 7;
 
 console.log(wE)
+
+//If the length of your name is greater than 7 say, your name is long else say your name is short.
+let name = parseInt(prompt('What is your name', 'ilyas'))
+name.length > 7
+    ? console.log('Your name is long')
+    : console.log('Your name is short')
+
+//Compare your first name length and your family name length and you should get this output.
+firsName = 'Ilyas';
+lastName = 'Benaissa';
+
+//Compare your first name length and your family name length and you should get this output.
+firsName.length > lastName.length
+    ? console.log(`Your first name, ${firsName} is longer than your family name, ${lastName}`)
+    : console.log(`Your family name, ${lastName} is longer than your first name, ${firsName}`)
+
+
+//Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+
+let myAge = 250
+let yourAge = 25
+console.log(`I am ${myAge} + ${yourAge} older than you`)
+
+//Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+
+let newNow = new Date().getFullYear();
+let birthDate = parseInt(prompt('Enter your birth year', '2000'));
+console.log(typeof(birthDate))
+let isAllowedToDrive = newNow - birthDate;
+if(isAllowedToDrive > 18 ){
+    console.log(`You are ${isAllowedToDrive}. You are old enough to drive`)
+} else if (isAllowedToDrive < 18){
+    console.log(`You are ${isAllowedToDrive}. You will be allowed to drive after 3 years.
+    `);
+}
