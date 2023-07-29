@@ -44,3 +44,59 @@ enterNum % 2 == 0
     : console.log('num is not even')
 
 //Exercises: Level 2
+
+//1
+
+let grades = parseInt(prompt('Write your grade', 100))
+
+if (grades >= 80 && grades <= 100) {
+    console.log("A");
+} else if(grades >= 70  && grades <= 89){
+    console.log("B");
+} else if(grades >= 60  && grades <= 69){
+    console.log("C");
+}else if(grades >= 50  && grades <= 59){
+    console.log("D");
+}else if(grades >= 0  && grades <= 49){
+    console.log("F");
+}
+
+//2 
+
+let season = prompt("Season checker, Write the month", "June");
+
+switch(season){
+    case "September":
+    case "October":
+    case "November":
+        console.log('the season is Autumn');
+        break
+    case "December":
+    case "January":
+    case "February":
+        console.log('the season is Winter');
+        break
+    case "March":
+    case "April":
+    case "May":
+        console.log('the season is Spring');
+        break
+    case "June":
+    case "July":
+    case "August":
+        console.log('the season is Summer');
+        break
+
+    default:
+        console.log("waaaaa HHHHHHHHHHHHHHH")
+}
+
+//3
+
+let day = prompt("Weekday checker", "Monday")
+
+if(day == "Saturday" || day == "Sunday"){
+    console.log("It's weekend")
+} else{
+    console.log("It's workday")
+}
