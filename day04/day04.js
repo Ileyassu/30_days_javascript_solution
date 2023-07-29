@@ -100,3 +100,75 @@ if(day == "Saturday" || day == "Sunday"){
 } else{
     console.log("It's workday")
 }
+
+
+//Exercises: Level 3
+//1
+let monthArray = ["January", "February", "Mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+let writeMonth = prompt("Enter a month: ", "June")
+writeMonth = writeMonth.charAt(0).toUpperCase() + writeMonth.slice(1).toLowerCase();
+
+if( writeMonth == "April"||
+    writeMonth == "June"||
+    writeMonth == "September"||
+    writeMonth == "November"
+){
+    console.log(`${writeMonth} has 30 days`)
+}
+else if (writeMonth == "February"){
+    console.log(`${writeMonth} has 28 days`)
+}else if(   writeMonth == "April"||
+            writeMonth == "June"||
+            writeMonth == "June"||
+            writeMonth == "September"||
+            writeMonth == "June"||
+            writeMonth == "September")
+            {
+                console.log(`${writeMonth} has 31 days`)
+    }
+else{
+    for(let i = 0; i < monthArray.length; i++){
+        if(writeMonth == monthArray[i]){
+            console.log("Error in the code")
+        }
+        console.log(`'${writeMonth}' is not a month`);
+    }
+}
+
+//2
+
+writeMonth = prompt("Enter a month: ", "June")
+writeMonth = writeMonth.charAt(0).toUpperCase() + writeMonth.slice(1).toLowerCase();
+let IsleapYear = prompt("is it a leap year ?", "no")
+if (IsleapYear == 'no'){
+    IsleapYear = false;
+}
+if( writeMonth == "April"||
+    writeMonth == "June"||
+    writeMonth == "September"||
+    writeMonth == "November"
+){
+    console.log(`${writeMonth} has 30 days`)
+}
+else if (writeMonth == "February" && IsleapYear){
+    console.log(`${writeMonth} has 29 days`)
+}
+else if (writeMonth == "February"){
+    console.log(`${writeMonth} has 28 days`)
+}else if(   writeMonth == "April"||
+            writeMonth == "June"||
+            writeMonth == "June"||
+            writeMonth == "September"||
+            writeMonth == "June"||
+            writeMonth == "September")
+            {
+                console.log(`${writeMonth} has 31 days`)
+    }
+else{
+    for(let i = 0; i < monthArray.length; i++){
+        if(writeMonth == monthArray[i]){
+            console.log("Error in the code")
+        }
+        console.log(`'${writeMonth}' is not a month`);
+    }
+}
