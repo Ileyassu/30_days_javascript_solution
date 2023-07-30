@@ -45,3 +45,17 @@ if(itCompanies.includes("Amazon") == true){
     console.log('company is not found')
 }
 
+//14
+
+for(let i = 0; i < itCompanies.length; i++){
+    console.log(`${itCompanies[i]} : ${itCompanies[i].split('o').length -1}`)
+}
+
+//15
+console.log(itCompanies.sort());
+//16
+console.log(itCompanies.reverse())
+//17
+console.log(itCompanies.slice(0, 3))
+//18
+console.log(itCompanies.slice(3, 6))
