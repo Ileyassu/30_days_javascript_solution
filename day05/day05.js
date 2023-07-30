@@ -38,7 +38,7 @@ for(let i = 0; i < itCompanies.length; i++){
 
 console.log(itCompanies.toString(),itCompanies.slice(5, 7).join(' and'), " are big IT companies.")
 
-
+//13
 if(itCompanies.includes("Amazon") == true){
     console.log('it exsits')
 }else{
