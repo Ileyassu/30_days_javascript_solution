@@ -59,3 +59,12 @@ console.log(itCompanies.reverse())
 console.log(itCompanies.slice(0, 3))
 //18
 console.log(itCompanies.slice(3, 6))
+//19
+console.log(itCompanies.slice(3, 4))
+//20
+itCompanies.shift()
+console.log(itCompanies)
+itCompanies.unshift()
+console.log(itCompanies)
+//21
+console.log(itCompanies.splice(2,2))
