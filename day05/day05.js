@@ -44,3 +44,4 @@ if(itCompanies.includes("Amazon") == true){
 }else{
     console.log('company is not found')
 }
+
