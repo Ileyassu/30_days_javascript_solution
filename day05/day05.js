@@ -68,3 +68,20 @@ itCompanies.unshift()
 console.log(itCompanies)
 //21
 console.log(itCompanies.splice(2,2))
+//22
+console.log('-------')
+console.log(itCompanies)
+itCompanies.pop()
+console.log(itCompanies)
+//23
+console.log('-------')
+for(i = 0; i < itCompanies.length; i++){
+    itCompanies.pop()
+    if(itCompanies.length == 1){
+        itCompanies.shift()
+    }
+}
+//or basically 
+itCompanies = []
+//lol
+console.log(itCompanies)
