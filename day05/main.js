@@ -41,3 +41,10 @@ if(webTechs.indexOf('Sass') != true){
 }
 const Sass = webTechs.indexOf('Sass')
 console.log(`${webTechs[Sass]} is a CSS preprocess`)
+
+//6
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = [...frontEnd, ...backEnd]
+console.log(fullStack)
