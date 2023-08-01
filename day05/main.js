@@ -50,5 +50,21 @@ const fullStack = [...frontEnd, ...backEnd]
 console.log(fullStack)
 
 //Exercise: Level 3
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+//1
+const ages = [19, 22, 19, 23, 20, 25, 26, 24, 25, 24]
 console.log(ages.sort())
+
+//2
+
+if(ages.length % 2 != 0){
+    let median = parseInt((ages.length / 2))
+    console.log(ages[median])
+}else{
+    let median1 = parseInt((ages.length / 2))
+    console.log(ages[median1], ages[median1 - 1])
+}
+
+//console.log(parseInt((ages.length / 2) + 1))
+//console.log(ages[6])
+
+
