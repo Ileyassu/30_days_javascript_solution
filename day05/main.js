@@ -48,3 +48,7 @@ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
 const fullStack = [...frontEnd, ...backEnd]
 console.log(fullStack)
+
+//Exercise: Level 3
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort())
