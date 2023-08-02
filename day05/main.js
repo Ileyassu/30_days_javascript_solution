@@ -51,20 +51,63 @@ console.log(fullStack)
 
 //Exercise: Level 3
 //1
+//*
 const ages = [19, 22, 19, 23, 20, 25, 26, 24, 25, 24]
 console.log(ages.sort())
-
-//2
+const max = ages.sort().pop()
+const min = ages.sort().shift()
+console.log('Max :' + max)
+console.log('Min :' + min)
+//*
 
 if(ages.length % 2 != 0){
     let median = parseInt((ages.length / 2))
-    console.log(ages[median])
+    console.log('Median is ' + ages[median])
 }else{
     let median1 = parseInt((ages.length / 2))
-    console.log(ages[median1], ages[median1 - 1])
+    console.log('Median is ' + ages[median1], ages[median1 - 1])
+}
+//*
+let x = 0;
+for(let i = 0; i<ages.length; i++){
+    x = x + ages[i]
+}
+let average = parseInt(x/ages.length)
+console.log(average)
+
+//*
+const range = (max - min)
+console.log(range)
+
+//*
+let value1 = Math.abs(min - average)
+let value2 = Math.abs(max - average)
+if(value1>value2){
+    console.log('value1 is bigger')
+} else {
+    console.log('value2 is bigger')
 }
 
-//console.log(parseInt((ages.length / 2) + 1))
-//console.log(ages[6])
+//1
+console.log(countries.slice(0, 10));
 
+//2
+let middle = countries.length / 2;
+console.log(countries[97])
 
+//
+let cArr1;
+let cArr2;
+if((middle / 2) % 0){
+    cArr1 = countries.slice(0, middle)
+    cArr2 = countries.slice(middle, countries.length)
+}else{
+    
+    cArr1 = countries.slice(0, middle)
+    cArr2 = countries.slice(middle, countries.length)
+}
+
+console.log(cArr1.length) //97
+console.log(cArr2.length) //97
+
+console.log(countries.length) //194
