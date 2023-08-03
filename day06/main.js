@@ -81,3 +81,34 @@ console.log('i  i^2 i^3')
         x = i*i
         y = i * x
     }
+
+//7
+
+for(let i = 0; i<100;i++){
+    if(i % 2 == 0){
+        console.log(i)
+    }
+}
+
+//8
+for(let i = 0; i<100;i++){
+    if(i % 2 != 0){
+        console.log(i)
+    }
+}
+
+//9
+n = 0
+for(let i = 2; i<=100; i++){
+    let isPrime = true;
+    for(let j = 2;j<Math.sqrt(i); j++){
+        if(i%j === 0){
+            isPrime = false;
+            break;
+        };
+    }
+
+    if(isPrime){
+        console.log(i)
+    }
+}
