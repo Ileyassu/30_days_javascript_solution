@@ -65,3 +65,19 @@ while(x<10){
 
 //6
 
+i = 0
+x = 0
+y = 0
+console.log(`${i}  ${x}    ${y}`)
+    i ++
+    x = i*i
+    y = i * x
+let n = 0
+console.log('i  i^2 i^3')
+
+    while(i<11){
+        ++i
+        console.log(`${i}  ${x}    ${y}`)
+        x = i*i
+        y = i * x
+    }
