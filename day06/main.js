@@ -155,5 +155,18 @@ console.log(arrEO)
 let randomNum= []
 for(let i = 0; i<5; i++){
     randomNum.push(parseInt(Math.random() * 100)) 
-    i == 4 ? console.log(randomNum) :null
+    i == 4 ? console.log(randomNum) :null;
 }
+
+//14 
+n = 0
+randomNum = []
+for(let i = 0; i < 5; i++){
+    n = parseInt(Math.random() * i)
+    if(randomNum.includes(n)){
+        --i;
+    }else{
+        randomNum.push(n)
+    }
+}
+console.log(randomNum)
