@@ -119,13 +119,41 @@ for(let i = 0; i <= 100; i++){
     n += i;
     console.log(n)
 }
+console.log('The sum of all numbers from 0 to 100 is ' + n)
 
 //11
-n = 0
+let odds = 0
 let evens = 0
 for(let i = 0; i <= 100; i++){
     if(i%2 == 0){
         evens = i + evens
+    } else{
+        odds += i
     }
-    console.log(evens)
+}
+console.log(`The sum of all evens from 0 to 100 is ${evens}. And the sum of all odds from 0 to 100 is ${odds}.`)
+
+//12
+
+odds = 0
+evens = 0
+let arrEO= []
+
+for(let i = 0; i<=100; i++){
+    if(i%2==0){
+        evens+=i
+    }else{
+        odds+=i
+    }
+    if(i == 100){
+        arrEO.push(evens, odds)
+    }
+}
+console.log(arrEO)
+
+//13
+let randomNum= []
+for(let i = 0; i<5; i++){
+    randomNum.push(parseInt(Math.random() * 100)) 
+    i == 4 ? console.log(randomNum) :null
 }
