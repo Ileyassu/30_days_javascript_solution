@@ -203,20 +203,9 @@ arrayChar1.length
 
 //2
 
-const hexNum = "123456789ABCDEF";
-
-n = 0
-let hexToString = []
-let o = 0
-for(let i = 0; i < 15; i++){
-    o = parseInt(Math.random() * 15)
-    n = hexNum[o]
-    hexToString.push(n.toString(16))
-    
+let hexaNumbers = '#'
+for(let i = 0; i < 6; i++){
+    const randomNumber = Math.floor(Math.random() * 16)
+    const hexMaker = randomNumber.toString(16)
+    hexaNumbers+=hexMaker
 }
-console.log(hexToString.join(''))
-/*for(let i = 0; i < 5; i++){
-    r = ((parseInt(Math.random() * 1000)).toString(16)) * 
-    parseInt(Math.random() * 1000)
-    hex = r.toString()
-}*/
