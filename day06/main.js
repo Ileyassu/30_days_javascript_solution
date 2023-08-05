@@ -192,7 +192,7 @@ console.log(arrayChar.join(''))
 let arrayChar1 = []
 let NewcharS = 0
 x = 0
-let randomizer = parseInt(Math.random()*100)
+let randomizer = parseInt(Math.random() * 55)
 for(let i = 0; i <= randomizer ; i++){
     n = parseInt(Math.random() * 34 - 1)
     NewcharS = characters[n]
@@ -209,3 +209,14 @@ for(let i = 0; i < 6; i++){
     const hexMaker = randomNumber.toString(16)
     hexaNumbers+=hexMaker
 }
+console.log(hexaNumbers)
+//3
+let color1;
+let color2;
+let color3;
+for(let i = 0; i <= 1; i++){
+    color1 = Math.floor(Math.random() * 256)
+    color2 = Math.floor(Math.random() * 256)
+    color3 = Math.floor(Math.random() * 256)
+}
+console.log(`rgb(${color1}, ${color2}, ${color3})`)
