@@ -188,6 +188,7 @@ console.log(arrayChar.join(''))
 
 //Exercises: Level 2
 
+//1
 let arrayChar1 = []
 let NewcharS = 0
 x = 0
@@ -197,5 +198,25 @@ for(let i = 0; i <= randomizer ; i++){
     NewcharS = characters[n]
     arrayChar1.push(NewcharS)
 }
-
 console.log(arrayChar1.join(''))
+arrayChar1.length
+
+//2
+
+const hexNum = "123456789ABCDEF";
+
+n = 0
+let hexToString = []
+let o = 0
+for(let i = 0; i < 15; i++){
+    o = parseInt(Math.random() * 15)
+    n = hexNum[o]
+    hexToString.push(n.toString(16))
+    
+}
+console.log(hexToString.join(''))
+/*for(let i = 0; i < 5; i++){
+    r = ((parseInt(Math.random() * 1000)).toString(16)) * 
+    parseInt(Math.random() * 1000)
+    hex = r.toString()
+}*/
