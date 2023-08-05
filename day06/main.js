@@ -220,3 +220,9 @@ for(let i = 0; i <= 1; i++){
     color3 = Math.floor(Math.random() * 256)
 }
 console.log(`rgb(${color1}, ${color2}, ${color3})`)
+
+//4
+
+for(let i = 0; i<0; i++){
+    console.log(countries[i].toUpperCase)
+}
