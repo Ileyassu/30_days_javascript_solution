@@ -176,10 +176,26 @@ const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678
 
 let arrayChar = []
 let charS
+x = 0
+
 for(let i = 0; i <= 5 ; i++){
-    n = parseInt(Math.random() * 68 - 1)
+    n = parseInt(Math.random() * 34 - 1)
     charS = characters[n]
     arrayChar.push(charS)
 }
 
 console.log(arrayChar.join(''))
+
+//Exercises: Level 2
+
+let arrayChar1 = []
+let NewcharS = 0
+x = 0
+let randomizer = parseInt(Math.random()*100)
+for(let i = 0; i <= randomizer ; i++){
+    n = parseInt(Math.random() * 34 - 1)
+    NewcharS = characters[n]
+    arrayChar1.push(NewcharS)
+}
+
+console.log(arrayChar1.join(''))
