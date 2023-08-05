@@ -223,6 +223,12 @@ console.log(`rgb(${color1}, ${color2}, ${color3})`)
 
 //4
 
-for(let i = 0; i<0; i++){
-    console.log(countries[i].toUpperCase)
+for(let i = 0; i<countries.length; i++){
+    console.log(countries[i].toUpperCase())
+}
+
+//5
+let countriesLength = []
+for(let i = 0; i<countries.length; i++){
+    countriesLength.push(countries[i].length);
 }
