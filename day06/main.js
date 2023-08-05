@@ -170,3 +170,16 @@ for(let i = 0; i < 5; i++){
     }
 }
 console.log(randomNum)
+
+//15
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&é"0^@';
+
+let arrayChar = []
+let charS
+for(let i = 0; i <= 5 ; i++){
+    n = parseInt(Math.random() * 68 - 1)
+    charS = characters[n]
+    arrayChar.push(charS)
+}
+
+console.log(arrayChar.join(''))
