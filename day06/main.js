@@ -237,8 +237,42 @@ for(let i = 0; i<countries.length; i++){
 let item1, item2, item3 = []
 let newArray = []
 for(let i = 0; i<countries.length; i++){
-    item1.push(countries[i])
-    item2.push(countries[i].slice(0, 3))
-    item3.push(countries[i].length)
+    item1 = countries[i]
+    item2 = countries[i].slice(0, 3)
+    item3 = countries[i].length
     newArray.push([item1, item2, item3])
+}
+
+//7
+let landInIt = []
+for(let i = 0; i < countries.length; i++){
+    if(countries[i].includes('land')){
+        landInIt.push(countries[i])
+    }else{
+        console.log('Countries without land')
+    }
+}
+
+//8
+let iaInIt = []
+for(let i = 0; i < countries.length; i++){
+    if(countries[i].includes('ia')){
+        landInIt.push(countries[i])
+    }else{
+        console.log('Countries without ia')
+    }
+}
+let j;
+let k;
+for(let i = 0; i<countries.length; i++){
+    if(countries[i + 1] === undefined){
+        break;
+    }
+   let j = countries[i].length;
+    let nextI = countries[i + 1].length
+    if(j>nextI){
+        continue;
+    }else if (j<nextI){
+        k = countries[i + 1]
+    }
 }
