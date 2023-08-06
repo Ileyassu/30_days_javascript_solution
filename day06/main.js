@@ -232,3 +232,13 @@ let countriesLength = []
 for(let i = 0; i<countries.length; i++){
     countriesLength.push(countries[i].length);
 }
+
+//6 
+let item1, item2, item3 = []
+let newArray = []
+for(let i = 0; i<countries.length; i++){
+    item1.push(countries[i])
+    item2.push(countries[i].slice(0, 3))
+    item3.push(countries[i].length)
+    newArray.push([item1, item2, item3])
+}
