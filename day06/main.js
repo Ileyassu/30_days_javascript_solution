@@ -262,6 +262,7 @@ for(let i = 0; i < countries.length; i++){
         console.log('Countries without ia')
     }
 }
+//9
 let j;
 let k;
 for(let i = 0; i<countries.length; i++){
@@ -275,4 +276,25 @@ for(let i = 0; i<countries.length; i++){
     }else if (j<nextI){
         k = countries[i + 1]
     }
+}
+//10
+let onlyFive = []
+for(let i = 0; i<countries.length; i++){
+    let j = countries[i]
+    if(j.length === 5){
+        onlyFive.push(j)
+    }
+}
+
+//11
+let longestWord = ''
+for(let i = 0; i < webTechs.length; i++){
+    if(webTechs[i].length > longestWord.length){
+        longestWord = webTechs[i]
+    }
+}
+let newWebTtech = []
+let items = []
+for(let i = 0; i < webTechs.length; i++){
+    items.push([webTechs[i], webTechs[i].length])
 }
