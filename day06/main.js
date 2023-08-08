@@ -293,8 +293,47 @@ for(let i = 0; i < webTechs.length; i++){
         longestWord = webTechs[i]
     }
 }
-let newWebTtech = []
+
+//12
 let items = []
 for(let i = 0; i < webTechs.length; i++){
     items.push([webTechs[i], webTechs[i].length])
+}
+
+//13
+
+let mernStack = ['MongoDB', 'Express','React', 'NodeJs']
+let MERN = ''
+for(let i = 0; i<webTechs.length; i++){
+    MERN = MERN + countries[i].slice(0,1);
+}
+
+//14
+
+for(let i = 0; i<["HTML", "CSS", "JS", 
+                "React", "Redux", "Node", 
+                "Express", "MongoDB"].length; i++)
+    {
+        const items = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+        console.log(items[i])
+    }
+
+//15
+
+let fruit = ['banana', 'orange', 'mango', 'lemon'];
+
+for(let i = fruit.length; i >= 0; i--){
+    console.log(fruit[i])
+}
+
+//16
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+
+for(let i = 0; i < fullStack.length; i++){
+    for(let j = 0; j < fullStack[i].length; j++){
+        console.log(fullStack[i][j])
+    }
 }
